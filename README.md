@@ -5,21 +5,21 @@ Descompact dentro da isntalação do seu Cake de forma que adicione 3 arquivos e
 
 No AppController adicione:
 
-  public $helpers = array(
-    'Html' => array('className' => 'BootstrapHtml'),
-    'Form' => array('className' => 'BootstrapForm'),
-    'Paginator' => array('className' => 'BootstrapPaginator')
-  );
+	public $helpers = array(
+		'Html' => array('className' => 'BootstrapHtml'),
+		'Form' => array('className' => 'BootstrapForm'),
+		'Paginator' => array('className' => 'BootstrapPaginator')
+	);
 
 De forma que fique assim:
 
-class AppController extends Controller {
-  public $helpers = array(
-    'Html' => array('className' => 'BootstrapHtml'),
-    'Form' => array('className' => 'BootstrapForm'),
-    'Paginator' => array('className' => 'BootstrapPaginator')
-  );
-}
+	class AppController extends Controller {
+		public $helpers = array(
+			'Html' => array('className' => 'BootstrapHtml'),
+			'Form' => array('className' => 'BootstrapForm'),
+			'Paginator' => array('className' => 'BootstrapPaginator')
+		);
+	}
 
 Depois pra usar fica fácil, só chamar os campos normalmente que ele cria a estrutura do HTML pro Twitter Boostrap.
 
